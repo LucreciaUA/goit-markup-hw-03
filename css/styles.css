@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol{
 .nav{
     display: flex;
     align-items: center;
-        padding: 24px 0;
+
 }
 
 .logo{
@@ -131,7 +131,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol{
 .menu{
     display: flex;
     gap: 40px;
-    
+    padding: 24px 0;
 }
 
 .menu .link{
@@ -191,12 +191,13 @@ text-align: center;
 .order-btn:hover, .order-btn:focus{
     background-color: var(--link-color-active);
 }
-
+.benefit-block{
+    padding: 120px 0;
+}
 .benefits{
     display: flex;
     justify-content: space-between;
     gap: 24px;
-    padding: 120px 0;
 }
 
 .benefit{
@@ -305,14 +306,14 @@ padding: 96px 0 120px 0;}
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.04em;
-    border: 1px solid var(--button-color-filter-border);
+    border: 1px solid var(--border-light);
     border-radius: 4px;
     padding: 12px 24px;
 }
 
 .filter-option:hover, .filter-option:focus{
     background-color: var(--link-color-active);
-    border: none;
+    border: 1px solid transparent;
     color: var(--text-color-white);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
@@ -325,10 +326,11 @@ padding: 96px 0 120px 0;}
 }
 .project-card{
     letter-spacing: 0.02em;
+    width: calc((100% - 48px) / 3);
 }
 
 .project-card .third-hl{
-    padding-bottom: 8px;
+margin-bottom: 8px;
     text-align: left;
 }
 
@@ -337,4 +339,5 @@ padding: 96px 0 120px 0;}
 .card-content{
     padding: 32px 16px;
     border: 1px solid var(--border-light);
+    border-top: none;
 }
