@@ -49,16 +49,16 @@ h1, h2, h3, h4, h5, h6, p, ul, ol{
     margin: 0 auto;
     padding: 0px 15px;
 }
-.section{
-    padding: 0 141px;
-}
+
 
 .headline{
     font-size: 56px;
     text-align: center;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    padding: 188px 316px 48px 316px;
+        padding-bottom: 48px;
+    max-width: 496px;
+    margin-left: 328px;
 }
 
 .second-hl{
@@ -68,6 +68,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol{
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .third-hl{
@@ -99,8 +100,6 @@ h1, h2, h3, h4, h5, h6, p, ul, ol{
 .header-content{
     display: flex;
     align-content: space-between;
-    padding-top: 24px;
-    padding-bottom: 24px;
     align-items: center;
     justify-content: space-between;
 
@@ -108,6 +107,8 @@ h1, h2, h3, h4, h5, h6, p, ul, ol{
 
 .nav{
     display: flex;
+    align-items: center;
+        padding: 24px 0;
 }
 
 .logo{
@@ -119,7 +120,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol{
     letter-spacing: 0.03em;
     line-height: 1.17;
     font-weight: 800;
-    padding-right: 76px;
+    margin-right: 76px;
 
 }
 
@@ -130,12 +131,14 @@ h1, h2, h3, h4, h5, h6, p, ul, ol{
 .menu{
     display: flex;
     gap: 40px;
+    
 }
 
 .menu .link{
     color: var(--text-color-headline);
     font-weight: 500;
     letter-spacing: 0.02em;
+
 }
 
 .menu .link:focus, .menu .link:hover{
@@ -160,9 +163,9 @@ h1, h2, h3, h4, h5, h6, p, ul, ol{
 
 .hero{
     background-color: var(--background-color-dark);
-    color: var(--text-color-white);   
-    padding-bottom: 188px;
-    align-content: center;
+    color: var(--text-color-white); 
+    padding: 188px 0;
+
 }
 
 .center{
@@ -179,23 +182,29 @@ text-align: center;
     cursor: pointer;
     border: none;
     padding: 16px 32px;
-
- 
-
+    display: block;
+    min-width: 169px;
+    border-radius: 4px;
+    margin-left: 495px;
 }
 
 .order-btn:hover, .order-btn:focus{
     background-color: var(--link-color-active);
 }
+
 .benefits{
     display: flex;
-    padding: 120px 0px 60px 0px;
     justify-content: space-between;
     gap: 24px;
+    padding: 120px 0;
+}
+
+.benefit{
+    width: calc((100% - 72px) / 4);
 }
 
 .benefits .third-hl{
-    padding-bottom: 8px;
+    margin-bottom: 8px;
     text-align: left;
 }
 .paragraf{
@@ -205,11 +214,7 @@ text-align: center;
 }
 
 .mp-projects{
-    padding: 60px 0 120px 0;
-}
-
-.mp-projects .second-hl{
-    padding-bottom: 72px;
+    padding-bottom: 120px;
 }
 .projects-exemples{
     display: flex;
@@ -217,13 +222,13 @@ text-align: center;
     gap: 24px;
 }
 
-.projects-exemples li{
-    border: 1px solid var(--border-light)
+.exemple{
+    border: 1px solid var(--border-light);
+    width: calc((100% - 48px) / 3);
 }
 .team{
     background-color: var(--background-color-team);
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 120px 0;
 }
 
 
@@ -231,23 +236,26 @@ text-align: center;
     display: flex;
     justify-content: space-between;
     gap: 24px;
-    padding-top: 72px;
+
 }
 
 .card{
     background-color: var(--text-color-white);
     letter-spacing: 0.02em;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+}
 
+.card-info{
+    padding: 32px 16px;
 }
 
 .card .third-hl{
-    padding-top: 32px;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 } 
 
 .card .paragraf{
-    padding-bottom: 32px;
     text-align: center;
 }
 
@@ -255,8 +263,7 @@ text-align: center;
     color: var(--text-color-light);
     background-color: var(--background-color-dark);
     letter-spacing: 0.02em;
-    padding-top: 101.5px;
-    padding-bottom: 100px;
+    padding: 100px 0;
 }
 
 .logo-d{
@@ -267,7 +274,8 @@ text-align: center;
     letter-spacing: 0.03em;
     line-height: 1.17;
     font-weight: 800;
-    padding-bottom: 17.5px;
+    margin-bottom: 16px;
+    display: inline-block;
 }
 
 .logo-d .web{
@@ -278,11 +286,13 @@ text-align: center;
 .footer-p{
     padding-right: 864px;
 }
+.portfolio{
+padding: 96px 0 120px 0;}
+
 .filter{
     display: flex;
     justify-content: center;
-    padding-bottom: 72px;
-    padding-top: 96px;
+    margin-bottom: 72px;
     gap: 24px;
 }
 .filter-option{
@@ -311,7 +321,7 @@ text-align: center;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 48px 24px;
-    padding-bottom: 120px;
+
 }
 .project-card{
     letter-spacing: 0.02em;

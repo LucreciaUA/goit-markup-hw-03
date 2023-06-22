@@ -9,7 +9,7 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,800&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
             rel="stylesheet">
-            <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+            <link rel="stylesheet" href="./css/modern-normalize.min.css">
         <link rel="stylesheet" href="./css/styles.css">
     <title>goit-markup-hw-02</title>
 
@@ -46,25 +46,25 @@
         <div class="container">
             <h2 class="visually-hidden">Our way</h2>
             <ul class="list benefits">
-                <li>
+                <li class="benefit">
                     <h3 class="third-hl">Strategy</h3>
                     <p class="paragraf">
                         Our goal is to identify the business problem to walk away with the perfect and creative solution.
                     </p>
                 </li>
-                <li>
+                <li class="benefit">
                     <h3 class="third-hl">Punctuality</h3>
                     <p class="paragraf">
                         Bring the key message to the brand's audience for the best price within the shortest possible time.
                     </p>
                 </li>
-                <li>
+                <li class="benefit">
                     <h3 class="third-hl">Diligence</h3>
                     <p class="paragraf">
                         Research and confirm brands that present the strongest digital growth opportunities and minimize risk.
                     </p>
                 </li>
-                <li>
+                <li class="benefit">
                     <h3 class="third-hl">Technologies</h3>
                     <p class="paragraf">
                         Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.
@@ -77,33 +77,43 @@
         <div class="container">
             <h2 class="second-hl">What are we doing</h2>
             <ul class="list projects-exemples">
-                <li><img src="./images/pcapp.jpg" width="360" height="300" alt="pc app"></li>
-                <li><img src="./images/phoneapp.jpg" width="360" height="300"  alt="phone app"></li>
-                <li><img src="./images/phone&mac.jpg" width="360" height="300"  alt="phone & mac"></li>
+                <li class="exemple"><img src="./images/pcapp.jpg" width="360" height="300" alt="pc app"></li>
+                <li class="exemple"><img src="./images/phoneapp.jpg" width="360" height="300"  alt="phone app"></li>
+                <li class="exemple"><img src="./images/phone&mac.jpg" width="360" height="300"  alt="phone & mac"></li>
             </ul>
+        </div>
     </section>
     <section class="section team">
+        <div class="container">
             <h2 class="second-hl">Our Team</h2>
             <ul class="list team-members">
                 <li class="card">
                     <img src="./images/mark_guerrero.jpg" width="264" height="260" alt="mark guerrero. Product Designer">
-                    <h3 class="third-hl">Mark Guerrero</h3>
-                    <p class="paragraf">Product Designer</p>
+                    <div class="card-info">
+                        <h3 class="third-hl">Mark Guerrero</h3>
+                        <p class="paragraf">Product Designer</p>
+                    </div>
                 </li>
                 <li class="card">
                     <img src="./images/tom_ford.jpg" width="264" height="260" alt="tom ford. Frontend Developer">
-                    <h3 class="third-hl">Tom Ford</h3>
-                    <p class="paragraf">Frontend Developer</p>
+                    <div class="card-info">
+                        <h3 class="third-hl">Tom Ford</h3>
+                        <p class="paragraf">Frontend Developer</p>
+                    </div>
                 </li>
                 <li class="card">
                     <img src="./images/camila_garcia.jpg" width="264" height="260" alt="camila garcia. Marketing">
-                    <h3 class="third-hl">Camila Garcia</h3>
-                    <p class="paragraf">Marketing</p>
+                    <div class="card-info">
+                        <h3 class="third-hl">Camila Garcia</h3>
+                        <p class="paragraf">Marketing</p>
+                    </div>
                 </li>
                 <li class="card">
                     <img src="./images/daniel_wilson.jpg" width="264" height="260" alt="daniel wilson. UI Designer">
-                    <h3 class="third-hl">Daniel Wilson</h3>
-                    <p class="paragraf">UI Designer</p>
+                    <div class="card-info">
+                        <h3 class="third-hl">Daniel Wilson</h3>
+                        <p class="paragraf">UI Designer</p>
+                    </div>
                 </li>
             </ul>
         </div>
