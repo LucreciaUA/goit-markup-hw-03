@@ -121,7 +121,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol{
     line-height: 1.17;
     font-weight: 800;
     margin-right: 76px;
-
+        padding: 24px 0;
 }
 
 .logo .web{
@@ -131,14 +131,14 @@ h1, h2, h3, h4, h5, h6, p, ul, ol{
 .menu{
     display: flex;
     gap: 40px;
-    padding: 24px 0;
+
 }
 
 .menu .link{
     color: var(--text-color-headline);
     font-weight: 500;
     letter-spacing: 0.02em;
-
+    padding: 24px 0;
 }
 
 .menu .link:focus, .menu .link:hover{
@@ -168,9 +168,6 @@ h1, h2, h3, h4, h5, h6, p, ul, ol{
 
 }
 
-.center{
-text-align: center;
-}
 .order-btn{
     background-color: var(--logo-color-web);
     color: var(--text-color-white);
